@@ -72,10 +72,23 @@ The description of the data files from the data page:
 ![Number of words in title column](./AVITO_13.png)
 
 #### Number of words in Description column
-![Number of words in Description column](./AVITO_14.png)
+![Number of words in Description column](./AVITO_16.png)
 
 #### Distribution of Deal Probability
-![Distribution of Deal Probability](./AVITO_15.png)
+![Distribution of Deal Probability](./AVITO_19.png)
+
+#### Demand Visualisation among Russia
+![Demand Visualisation among Russia](./AVITO_22.png)
+
+#### Good Online Advertisments 
+![Good Online Advertisments](./AVITO_20.png)
+
+#### Bad Online Advertisments
+![Bad Online Advertisments](./AVITO_21.png)
+ 
+ #### VGG16 Model Summary
+![VGG16 Model Summary](./AVITO_23.png)
+![VGG16 Model Summary](./AVITO_24.png)
 
 ### For further information:
 

@@ -9,16 +9,16 @@ To predict demand for an online advertisement based on its full description (tit
 
 The description of the data files from the data page:
 
-train.csv - Train data.
-test.csv - Test data. Same schema as the train data, minus deal_probability.
-train_active.csv - Supplemental data from ads that were displayed during the same period as train.csv. Same schema as the train data, minus deal_probability.
-test_active.csv - Supplemental data from ads that were displayed during the same period as test.csv. Same schema as the train data, minus deal_probability.
-periods_train.csv - Supplemental data showing the dates when the ads from train_active.csv were activated and when they where displayed.
-periods_test.csv - Supplemental data showing the dates when the ads from test_active.csv were activated and when they where displayed. Same schema as periods_train.csv, except that the item ids map to an ad in test_active.csv.
+**train.csv** - Train data.
+**test.csv** - Test data. Same schema as the train data, minus deal_probability.
+**train_active.csv** - Supplemental data from ads that were displayed during the same period as train.csv. Same schema as the train data, minus deal_probability.
+**test_active.csv** - Supplemental data from ads that were displayed during the same period as test.csv. Same schema as the train data, minus deal_probability.
+**periods_train.csv** - Supplemental data showing the dates when the ads from train_active.csv were activated and when they where displayed.
+**periods_test.csv** - Supplemental data showing the dates when the ads from test_active.csv were activated and when they where displayed. Same schema as periods_train.csv, except that the item ids map to an ad in test_active.csv.
 
-train_jpg.zip - Images from the ads in train.csv.
-test_jpg.zip - Images from the ads in test.csv.
-sample_submission.csv - A sample submission in the correct format.
+**train_jpg.zip** - Images from the ads in train.csv.
+**test_jpg.zip** - Images from the ads in test.csv.
+**sample_submission.csv** - A sample submission in the correct format.
 
 ## Approach:
 
@@ -32,53 +32,50 @@ sample_submission.csv - A sample submission in the correct format.
            
 ## RESULTS :
 
-#### Deal Probability Histogram
-![Deal Probability Histogram](./AVITO_2.png)
-
-#### Deal Probability Distribution
-![Deal Probability Distribution](./AVITO_2.png)
+#### Region Distribution
+![Region Distribution](./AVITO_1.png)
 
 #### Deal probability by region
-![Deal probability by region](./AVITO_3.png)
+![Deal probability by region](./AVITO_2.png)
 
 #### City wise distribution of Ads
-![City wise distribution of Ads](./AVITO_4.png)
+![City wise distribution of Ads](./AVITO_3.png)
 
 #### Parent Category distribution
-![Parent Category distribution](./AVITO_5.png)
+![Parent Category distribution](./AVITO_4.png)
 
 #### Deal probability by parent category
-![Deal probability by parent category](./AVITO_6.png)
+![Deal probability by parent category](./AVITO_5.png)
 
 #### Category Name of Ads - Count
-![Category Name of Ads - Count](./AVITO_7.png)
+![Category Name of Ads - Count](./AVITO_6.png)
 
 #### User Type distribution
-![User Type distribution](./AVITO_8.png)
+![User Type distribution](./AVITO_7.png)
 
 #### Log of Price Histogram
-![Log of Price Histogram](./AVITO_9.png)
+![Log of Price Histogram](./AVITO_8.png)
 
 #### Activation Dates in Train
-![Activation Dates in Train](./AVITO_.10)
+![Activation Dates in Train](./AVITO_9.png)
 
 #### Activation Dates in Test
-![Activation Dates in Test](./AVITO_11.png)
+![Activation Dates in Test](./AVITO_10.png)
 
 #### Number of users in train and test
-![Number of users in train and test](./AVITO_12.png)
+![Number of users in train and test](./AVITO_11.png)
 
 #### Number of titles in train and test
-![Number of titles in train and test](./AVITO_13.png)
+![Number of titles in train and test](./AVITO_12.png)
 
 #### Number of words in title column
-![Number of words in title column](./AVITO_14.png)
+![Number of words in title column](./AVITO_13.png)
 
 #### Number of words in Description column
-![Number of words in Description column](./AVITO_15.png)
+![Number of words in Description column](./AVITO_14.png)
 
 #### Distribution of Deal Probability
-![Distribution of Deal Probability](./AVITO_16.png)
+![Distribution of Deal Probability](./AVITO_15.png)
 
 ### For further information:
 

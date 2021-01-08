@@ -10,14 +10,21 @@ To predict demand for an online advertisement based on its full description (tit
 The description of the data files from the data page:
 
 **train.csv** - Train data.
+
 **test.csv** - Test data. Same schema as the train data, minus deal_probability.
+
 **train_active.csv** - Supplemental data from ads that were displayed during the same period as train.csv. Same schema as the train data, minus deal_probability.
+
 **test_active.csv** - Supplemental data from ads that were displayed during the same period as test.csv. Same schema as the train data, minus deal_probability.
+
 **periods_train.csv** - Supplemental data showing the dates when the ads from train_active.csv were activated and when they where displayed.
+
 **periods_test.csv** - Supplemental data showing the dates when the ads from test_active.csv were activated and when they where displayed. Same schema as periods_train.csv, except that the item ids map to an ad in test_active.csv.
 
 **train_jpg.zip** - Images from the ads in train.csv.
+
 **test_jpg.zip** - Images from the ads in test.csv.
+
 **sample_submission.csv** - A sample submission in the correct format.
 
 ## Approach:

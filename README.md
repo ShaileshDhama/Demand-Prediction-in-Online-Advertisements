@@ -33,7 +33,7 @@ sample_submission.csv - A sample submission in the correct format.
 ## RESULTS :
 
 #### Deal Probability Histogram
-![Deal Probability Histogram](./AVITO_1.png)
+![Deal Probability Histogram](./AVITO_2.png)
 
 #### Deal Probability Distribution
 ![Deal Probability Distribution](./AVITO_2.png)

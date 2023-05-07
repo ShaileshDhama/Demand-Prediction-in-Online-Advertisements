@@ -1,117 +1,76 @@
 # Demand Prediction in Online Advertisements
-### To predict demand for an online classified ad
 
-**Author** : SHAILESH DHAMA
+This repository contains the code and documentation for the project "Demand Prediction in Online Advertisements" by Shailesh Dhama. The goal of this project is to predict the demand for an online classified ad based on its full description, context, and historical demand for similar ads. The project involves both natural language processing (NLP) on Russian text data and image data along with numerical data.
 
-To predict demand for an online advertisement based on its full description (title, description, images, etc.),its context (geographically where it was posted, similar ads already posted) and historical demand for similar ads in similar contexts. This involves both NLP (text data in Russian) and Image data along with numerical.
+## Dataset
 
-### Dataset : https://www.kaggle.com/c/avito-demand-prediction/data
+The data used in this project is from the Avito Demand Prediction Challenge on Kaggle, which can be found [here](https://www.kaggle.com/c/avito-demand-prediction/data). The dataset includes train and test data, supplemental data, and image data.
 
-The description of the data files from the data page:
+## Approach
 
-**train.csv** - Train data.
+The project follows the following approach:
 
-**test.csv** - Test data. Same schema as the train data, minus deal_probability.
+1. Data processing and exploratory data analysis (EDA)
+2. Build a Convolutional Neural Network (CNN)
+3. Show important plots
+4. Test the model
 
-**train_active.csv** - Supplemental data from ads that were displayed during the same period as train.csv. Same schema as the train data, minus deal_probability.
+### Data Processing and Exploratory Data Analysis
 
-**test_active.csv** - Supplemental data from ads that were displayed during the same period as test.csv. Same schema as the train data, minus deal_probability.
+The first step of the project is data processing and exploratory data analysis. This includes loading and processing data, and exploring the data with visualizations. Important visualizations include:
 
-**periods_train.csv** - Supplemental data showing the dates when the ads from train_active.csv were activated and when they where displayed.
+- Region distribution
+- Deal probability by region
+- City-wise distribution of ads
+- Parent category distribution
+- Deal probability by parent category
+- Category name of ads count
+- User type distribution
+- Log of price histogram
+- Activation dates in train and test
+- Number of users in train and test
+- Number of titles in train and test
+- Number of words in title column
+- Number of words in description column
+- Distribution of deal probability
+- Demand visualization among Russia
+- Good online advertisements
+- Bad online advertisements
 
-**periods_test.csv** - Supplemental data showing the dates when the ads from test_active.csv were activated and when they where displayed. Same schema as periods_train.csv, except that the item ids map to an ad in test_active.csv.
+### Build a Convolutional Neural Network
 
-**train_jpg.zip** - Images from the ads in train.csv.
+The second step is building a Convolutional Neural Network (CNN) to predict the demand for an online classified ad based on its image. The model used in this project is the VGG16 model.
 
-**test_jpg.zip** - Images from the ads in test.csv.
+### Show Important Plots
 
-**sample_submission.csv** - A sample submission in the correct format.
+The third step is showing important plots. The visualizations include:
 
-## Approach:
+- VGG16 model summary
 
-### Data processing & Exploratory Data Analysis:
+### Test the Model
 
-    1.Import Libraries
-    2.Loading and processing data
-    3.Build our Convolutional Neural Network
-    4.Show important plots
-    5.Test our model
-           
-## RESULTS :
+The fourth and final step is testing the model.
 
-#### Region Distribution
-![Region Distribution](./AVITO_1.png)
+## Results
 
-#### Deal probability by region
-![Deal probability by region](./AVITO_2.png)
+The project produced important visualizations that provide insights into the data. These visualizations include region distribution, deal probability by region, city-wise distribution of ads, parent category distribution, deal probability by parent category, category name of ads count, user type distribution, log of price histogram, activation dates in train and test, number of users in train and test, number of titles in train and test, number of words in title column, number of words in description column, distribution of deal probability, demand visualization among Russia, good online advertisements, and bad online advertisements.
 
-#### City wise distribution of Ads
-![City wise distribution of Ads](./AVITO_3.png)
+The project also produced a CNN model based on the VGG16 architecture to predict the demand for an online classified ad based on its image.
 
-#### Parent Category distribution
-![Parent Category distribution](./AVITO_4.png)
+For more information, see the project's [Jupyter notebook](./Demand%20Prediction%20in%20Online%20Advertisements.ipynb).
 
-#### Deal probability by parent category
-![Deal probability by parent category](./AVITO_5.png)
-
-#### Category Name of Ads - Count
-![Category Name of Ads - Count](./AVITO_6.png)
-
-#### User Type distribution
-![User Type distribution](./AVITO_7.png)
-
-#### Log of Price Histogram
-![Log of Price Histogram](./AVITO_8.png)
-
-#### Activation Dates in Train
-![Activation Dates in Train](./AVITO_9.png)
-
-#### Activation Dates in Test
-![Activation Dates in Test](./AVITO_10.png)
-
-#### Number of users in train and test
-![Number of users in train and test](./AVITO_11.png)
-
-#### Number of titles in train and test
-![Number of titles in train and test](./AVITO_12.png)
-
-#### Number of words in title column
-![Number of words in title column](./AVITO_13.png)
-
-#### Number of words in Description column
-![Number of words in Description column](./AVITO_16.png)
-
-#### Distribution of Deal Probability
-![Distribution of Deal Probability](./AVITO_19.png)
-
-#### Demand Visualisation among Russia
-![Demand Visualisation among Russia](./AVITO_22.png)
-
-#### Good Online Advertisments 
-![Good Online Advertisments](./AVITO_20.png)
-
-#### Bad Online Advertisments
-![Bad Online Advertisments](./AVITO_21.png)
- 
- #### VGG16 Model Summary
-![VGG16 Model Summary](./AVITO_23.png)
-![VGG16 Model Summary](./AVITO_24.png)
-
-### For further information:
-
-Please review the narrative of our analysis in [our jupyter notebook](./Demand%20Prediction%20in%20Online%20Advertisements.ipynb)
-
-For any additional questions, please contact **shaileshettyd@gmail.com)
-
-##### Repository Structure:
+## Repository Structure
 
 ```
-├── README.md                                                                                                   <- The top-level README for reviewers
-├── Demand%20Prediction%20in%20Online%20Advertisements.ipynb                                                    <- Narrative documentation of analysis
-├── https://www.kaggle.com/c/avito-demand-prediction/data                                                       <- Dataset
-└── images                                                                                                      <- generated from code
+├── README.md                                   <- The top-level README for reviewers
+├── Demand%20Prediction%20in%20Online%20Advertisements.ipynb  <- Narrative documentation of analysis
+├── https://www.kaggle.com/c/avito-demand-prediction/data     <- Dataset
+└── images                                      <- generated from code
 ```
-## Citing :
+
+## Citing
+
+If you use this project for your research, please consider citing:
 
 ```
 @misc{Shailesh:2020,
@@ -120,6 +79,4 @@ For any additional questions, please contact **shaileshettyd@gmail.com)
   Year = {2020},
   Publisher = {GitHub},
   Journal = {GitHub repository},
-  Howpublished = {\url{https://github.com/ShaileshDhama/-Demand-Prediction-in-Online-Advertisements}}
-}
-```
+
